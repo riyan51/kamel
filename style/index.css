@@ -1,0 +1,564 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.b{
+    border: solid red 1px;
+}
+
+.all{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+
+}
+
+body{
+    overflow: hidden;
+
+}
+
+.app{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-radius: 30px;
+    box-shadow: grey 0px 0px 30px 10px;
+}
+
+@media only screen and (max-width: 320px){
+    .app{
+        flex-direction: column;
+
+    }
+}
+
+.menu{
+    height: 100%;
+    width: 30%;
+}
+
+
+.cv{
+    height: 100%;
+    width: 65%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.div1{
+    height: 33%;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.div2{
+    height: 33%;
+    width: 100%;
+    text-align: center; 
+}
+
+.div3{
+    height: 34%;
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+.info-contact{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.adresse{
+    font-size: small;
+    color: grey;
+    display: flex;
+    padding-left: 10px;
+}
+
+.titre-trait{
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+hr{
+    color: black !important;
+    background-color: black;
+    border-color: rgb(172, 167, 167);
+}
+
+.contact{
+    font-size: small;
+    color: grey;
+    display: flex;
+}
+
+.adresse img{
+    width: 10px;
+    height: 50px;
+}
+
+.contact img{
+    width: 10px;
+    height: 50px;
+}
+
+.lbio a{
+    text-decoration: none;
+    color: black;
+}
+
+.lbio{
+    padding: 10px 0px 0px 0px;
+}
+
+.lspecialites a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.lspecialites{
+    padding: 10px 0px 0px 0px;
+}
+
+.lcompetences a{
+    text-decoration: none;
+    color: black;
+    font-family: retro ;
+}
+
+.lcompetences{
+    padding: 10px 0px 0px 0px;
+}
+
+.llangues a{
+    text-decoration: none;
+    color: black;
+}
+
+.llangues{
+    padding: 10px 0px 0px 0px;
+}
+
+.lformation a{
+    text-decoration: none;
+    color: black;
+}
+
+.lformation{
+    padding: 10px 0px 0px 0px;
+}
+
+.lexperience a{
+    text-decoration: none;
+    color: black;
+}
+
+.lexperience{
+    padding: 10px 0px 0px 0px;
+}
+
+.lhobbies a{
+    text-decoration: none;
+    color: black;
+}
+
+.lhobbies{
+    padding: 10px 0px 0px 0px;
+}
+
+.name{
+    text-align: center;
+    padding: 0px 0px 25px 0px;
+}
+
+.image1 img{
+    width: 80%;
+}
+
+.image1{
+    display: flex;
+    justify-content: center;
+}
+
+.titrebio{
+    width: 50px;
+    font-size: xx-large;
+}
+    
+.image11{
+    height: 30%;
+    width: 30%;
+    display: block;
+    margin: auto;   
+}
+
+body{
+    background-color: rgb(202, 199, 199);
+}
+
+.image12{
+    transform: translateY(-19px);
+}
+
+@media only screen and (max-width: 768px) {
+    .info-contact{
+        flex-direction: column;
+        
+    }
+
+    .contact{
+        padding-left: 10px;
+    }
+
+    .adresse{
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .menu{
+        display: flex;
+        width: 100%;
+        height: 20%;
+
+    }
+
+    .div2{
+        display: none;
+
+    }
+
+    .info-contact{
+        font-size: 10px;
+        margin-bottom: 0 !important; 
+    }
+
+    .cv{
+        width: 100%;
+        display: grid;
+    }
+
+    .div1{
+        margin-left: 20px;
+        width: 40%;
+    }
+
+    .div3{
+        height: 90px;
+        width: auto;
+        padding-bottom: 0;
+
+    }
+
+    .contact img{
+        width: 10px;
+        height: 30px;
+    }
+
+    .contact{
+        font-size: 10px;
+        padding-left: 5px;
+    }
+
+    .adresse img{
+        width: 10px;
+        height: 30px;
+    }
+
+    .adresse{
+        font-size: 10px;
+        padding-left: 5px;
+    }
+
+    .name{
+        font-size: x-large;
+        padding: 0;
+    }
+
+    .image1 img{
+        width: 100%;
+    }
+
+    
+}
+
+
+/*modif pour la partie 1 du cv*/
+
+
+.paragraphebio{
+    height: 100%;
+}
+
+.paragraphebio p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.paragraphespecialites{
+    height: 100%;
+}
+
+@media only screen and (max-width: 320px){
+    .paragraphebio{
+        height: auto;
+        width: 100%;
+    }
+
+    .paragraphebio p{
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .paragraphespecialites{
+        height: auto;
+    }
+
+   
+}
+
+
+/*modif pour la partie 2 du cv*/
+
+.paragraphespecialites{
+    height: 100%;
+}
+
+.titrespecialites{
+    font-size: xx-large;
+}
+
+.specialite img{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.mot1{
+    text-align: center;
+}
+
+.contenu-specialite{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .contenu-specialite{
+        flex-direction: column;
+    }
+
+    .specialite{
+        transform: translateX(0) !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+}
+
+/*modif pour la partie 3 du cv*/
+
+
+.paragraphecompetences{
+    height: 100%;
+
+}
+
+.contenu-paragraphe{
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    justify-content: center;
+    height: 200px;
+    margin-top: 40px;
+
+}
+
+.images-competence{
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    padding: 10px;
+    justify-content: space-between;
+
+}
+
+.titrecompetences{
+    font-size: xx-large;
+}
+
+.images-competence img{
+    width: 180px;
+    
+}
+
+.competence{
+    margin-right: 20px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+    .paragraphecompetences{
+        padding-top: 30px;
+    }
+}
+
+
+
+
+
+/*modif pour la partie 4 du cv*/
+
+
+.paragraphelangues{
+    height: 100%;
+}
+
+.titrelangues{
+    font-size: xx-large;
+}
+
+.imgfr{
+    width: 30%;
+    padding: 150px 0px 0px 60px;
+}
+
+.imgfr{
+    width: 20%;
+}
+
+
+/*modif pour la partie 5 du cv*/
+
+
+.paragrapheformation{
+    height: 100%;
+    
+}
+
+.titreformation{
+    font-size: xx-large;
+}
+
+.contenu-formation{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.image-formation{
+    width: 30px;
+
+}
+
+.formation-texte{
+    display: flex;
+    flex-direction: column;
+}
+
+.formation-texte p{
+    height: 33%;
+
+}
+
+
+/*modif pour la partie 6 du cv*/
+
+
+.paragrapheexperience{
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.titreexperience{
+    font-size: xx-large;
+}
+
+
+.grand3{
+    font-size: 120px;
+    text-align: end;
+    
+}
+
+.granddiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 150px;
+    margin-top: 50px;
+}
+
+.contenu-experience{
+    display: flex;
+    height: 100%;
+
+}
+
+.contenu-experience div{
+    height: 100%;
+
+}
+
+.texte-experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .granddiv{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/*modif pour la partie 6 du cv*/
+
+
+.paragraphehobbies{
+    height: 100%;
+}
+
+.titrehobbies{
+    font-size: xx-large;
+}
+
+.jeuxvideo{
+    width: 20%;
+    padding: 50px 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .hobbies-images{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .jeuxvideo{
+        width: 150px;
+    }
+}
+
